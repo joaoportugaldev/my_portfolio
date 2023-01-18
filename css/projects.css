@@ -1,0 +1,107 @@
+#projects {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background-color: var(--azul-marinho);
+}
+
+#projects h2 {
+    margin-top: 1.5em;
+}
+
+.projects_preview {
+    display: flex;
+    max-width: 80%;
+    margin: 2em auto;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+.projects_preview p {
+    max-width: 15em;
+    font-size: 20px;
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+.carosel {
+    display: flex;
+    gap: 2em;
+}
+
+.gridprojects {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+}
+
+.oneproject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    color: black;
+    width: 310px;
+    height: 195px;
+    background-color: #f0f8ff;
+    transition: .8s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.oneproject:hover {
+    transform: scale(1.1);
+}
+
+#projects a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.band {
+    display: block;
+    text-align: center;
+    width: 1000px;
+    padding: 5% 0;
+    color: var(--branco);
+    background-color: var(--monocrom-d);
+    transform: rotate(-50deg);
+}
+
+.band span {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2em;
+}
+
+.arrow-prev, .arrow-next {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-prev svg path, .arrow-next svg path {
+    fill: var(--off-white);
+}
+
+.arrow-prev svg, .arrow-next svg {
+    width: 70px;
+    height: 70px;
+    transition: .3s;
+    border-radius: 5em;
+    padding: .6em;
+    cursor: pointer;
+}
+
+.arrow-prev svg:hover, .arrow-next svg:hover {
+    
+    background-color: var(--off-white);
+} 
+
+.arrow-prev svg:hover path, .arrow-next svg:hover path {
+    fill: var(--monocrom-d)
+}
+

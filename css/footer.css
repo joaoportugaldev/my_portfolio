@@ -1,0 +1,5 @@
+footer {
+    display: flex;
+    background-color: var(--azul-marinho);
+    padding: 1em 0;
+}

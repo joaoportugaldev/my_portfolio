@@ -1,0 +1,86 @@
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--monocrom-d);
+    padding: 3em;
+    gap: 2em;
+}
+
+.experience_content {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+.experience_nav ul,
+.skills_description ul {
+    list-style: none;
+}
+
+.experience_nav {
+    padding-left: 1em;
+    border-left: solid 3px var(--monocrom-b);
+}
+
+.experience_nav li {
+    padding: 1em;
+}
+
+.experience_nav li:hover {
+    background-color: var(--monocrom-b);
+    cursor: pointer;
+}
+
+
+.skills_description ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+.skill {
+    border-radius: 1em;
+    background-color: var(--off-white);
+    width: 100px;
+    height: 100px;
+}
+
+.skill_1 {
+    background-image: url(../icons/html.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill_2 {
+    background-image: url(../icons/css.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill_3 {
+    background-image: url(../icons/js.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill_4 {
+    background-image: url(../icons/github.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill_5 {
+    background-image: url(../icons/git.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill_6 {
+    background-image: url(../icons/react.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

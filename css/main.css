@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    color: var(--branco);
+}
+
+:root {
+    --azul-escuro: #3978A0;
+    --azul-claro: #7FC8F6;
+    --azul-marinho: #0F1A44;
+    --monocrom-b: #7F97F4;
+    --monocrom-c: #355BF2;
+    --monocrom-d: #3C4773;
+    --monocrom-e: #2A48BF;
+    --bege: #EED7C7;
+    --branco: #fff;
+    --off-white: #f0f8ff;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient((rgba(0,0,0,0.7)), rgba(0,0,0,0) 20%), url(/images/fotoPerfil.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(196, 196, 196, 0.11); */
+    background-color: var(--off-white);
+    backdrop-filter: blur(10px);
+    border-bottom: solid 3px var(--azul-marinho);
+    width: 100%;
+    position: fixed;
+    min-height: 90px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    cursor: pointer;
+    width: 72px;
+    transition: .4s;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--azul-marinho);
+    font-size: 20px;
+    padding: 0 1em;
+}
+
+nav a:hover {
+    color: var(--azul-claro);
+}

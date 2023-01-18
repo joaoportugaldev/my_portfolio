@@ -1,0 +1,57 @@
+#home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+.begin {
+    background-image: linear-gradient(60deg, var(--azul-marinho) 50%, transparent 50%), url(/images/fotoPerfil.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.home_fotoPerfil {
+    width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--branco);
+}
+
+.myName {
+    color: var(--azul-claro);
+    font-size: 3em;
+}
+
+.home_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkedin_button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    background-color: var(--branco);
+    padding: 1em;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4em;
+}
+
+.letter_spacing {
+    color: var(--azul-marinho);
+    transition: .5s;
+}
+
+.linkedin_button:hover {
+    letter-spacing: .3em;
+}
+
