@@ -13,14 +13,14 @@
 
 .projects_preview {
     display: flex;
-    max-width: 80%;
-    margin: 2em auto;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
     margin-bottom: 3em;
 }
 
-.projects_preview p {
-    max-width: 15em;
+.doIt {
+    width: 25%;
     font-size: 20px;
     margin-top: 1em;
     font-weight: 400;
@@ -44,10 +44,9 @@
     align-items: center;
     justify-content: center;
     border-radius: 2em;
-    color: black;
     width: 310px;
     height: 195px;
-    background-color: #f0f8ff;
+    background-color: var(--off-white);
     transition: .8s;
     overflow: hidden;
     cursor: pointer;
@@ -60,22 +59,6 @@
 #projects a {
     color: var(--branco);
     text-decoration: none;
-}
-
-.band {
-    display: block;
-    text-align: center;
-    width: 1000px;
-    padding: 5% 0;
-    color: var(--branco);
-    background-color: var(--monocrom-d);
-    transform: rotate(-50deg);
-}
-
-.band span {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .2em;
 }
 
 .arrow-prev, .arrow-next {
@@ -105,3 +88,73 @@
     fill: var(--monocrom-d)
 }
 
+.ux {
+    display:none;
+    font-size: 12px;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* descrição dos projetos */
+
+.project_description {
+    width: 25%;
+    display: none;
+    flex-direction: column;
+    transition: .2s;
+    padding: 0 2em;
+}
+
+.project_description p {
+    margin-top: 1em;
+    width: 100%;
+}
+.project_description h3 {
+    color: var(--monocrom-b);
+    font-size: 2.5em;
+    padding-bottom: .2em;
+}
+
+.project_description h4 {
+    font-weight: 400;
+    padding-bottom: .2em;
+    color: var(--off-white);
+    font-size: 1em;
+}
+
+.project_description h5 {
+    font-weight: 400;
+    color: var(--off-white);
+    font-size: 1em;
+}
+
+.project_description .course_title {
+    text-transform: uppercase;
+    color: var(--azul-claro);
+}
+
+#project_button {
+    width: 100%;
+    background-color: var(--off-white);
+    padding: .4em;
+}
+
+/* faixa 'em breve' */
+
+.band {
+    display: block;
+    text-align: center;
+    height: 20%;
+    width: 1000px;
+    padding: 2% 0;
+    color: var(--branco);
+    background-color: var(--monocrom-d);
+    transform: rotate(-50deg);
+}
+
+.band span {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2em;
+}

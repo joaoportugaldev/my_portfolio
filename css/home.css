@@ -33,7 +33,7 @@ h1 {
     align-items: center;
 }
 
-.linkedin_button {
+.standard_button {
     display: block;
     width: 100%;
     text-align: center;
@@ -51,7 +51,7 @@ h1 {
     transition: .5s;
 }
 
-.linkedin_button:hover {
+.standard_button:hover {
     letter-spacing: .3em;
 }
 
