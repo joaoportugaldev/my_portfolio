@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css//projects.css">
-    <link rel="stylesheet" href="./css/projects_css/band.css">
-    <link rel="stylesheet" href="./css/projects_css/hoverFunctions.css">
     <link rel="stylesheet" href="./css/experience.css">
     <link rel="stylesheet" href="./css/footer.css">
 
@@ -80,10 +78,17 @@
                             24.554688 50.109375 26.734375 47.933594 L 68.691406 5.84375 " fill-opacity="1" fill-rule="nonzero"/></g></svg>
                 </div>
                 <ul class="gridprojects">
-                    <li class="oneproject project_1"><div class="boxContent"><div><span class="boxText"></span></div></div></li>
-                    <li class="oneproject project_2"><div class="boxContent"><div><span class="boxText"></span></div></div></li>
-                    <li class="oneproject project_3"><div class="boxContent"><div><span class="boxText"></span></div></div></li>
-                    <li class="oneproject project_4"><div class="boxContent"><div><span class="boxText"></span></div></div></li>
+                    <li class="project_1 oneproject ">
+                        <div class="boxContent">
+                            <!-- <div> -->
+                                <a class="boxText" href="#home">Deploy</a>
+                                <a class="boxText" href="#home"></a>
+                            <!-- </div> -->
+                        </div>
+                    </li>
+                    <li class="project_2 oneproject "><div class="boxContent"><div><span class="boxText"></span></div></div></li>
+                    <li class="project_3 oneproject "><div class="boxContent"><div><span class="boxText"></span></div></div></li>
+                    <li class="project_4 oneproject "><div class="boxContent"><div><span class="boxText"></span></div></div></li>
                 </ul>
                 <div class="arrow-next">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" zoomAndPan="magnify" 
@@ -101,25 +106,21 @@
             </div>
             <div class="project_1_description project_description">
                 <h3>Alura Plus Site</h3>
-                <h4><span class="course_title">Curso Alura:</span> HTML e CSS: praticando HTML/CSS</h4>
-                <h5><span class="course_title">Tecnologias utilizadas:</span> HTML e CSS</h5>
+                <h4><span class="course_title">Curso Alura:</span><br></h4>
+                <h5>HTML e CSS: praticando HTML/CSS</h5>
+                <h4><span class="course_title">Tecnologias utilizadas:</span></h4>
+
+                <div class="techlogo">
+                    <div class="html"><img src="./icons/html.svg" alt="Logo HTML"></div>
+                    <div class="css"><img src="./icons/css.svg" alt="Logo CSS"></div>
+                </div>
+                    
                 <p>Projeto fruto do primeiro curso que fiz na plataforma Alura o qual 
                     é inspirado na landing page da DisneyPlus.
                 </p>
-                <a class="standard_button" id="project_button" href="#"><span class="letter_spacing">Visualizar</span></a>
-                <p class="ux">/* Passe o mouse por cima para ver outro projeto */</p>
+                <!-- <a class="standard_button" id="project_button" href="#"><span class="letter_spacing">Visualizar</span></a> -->
             </div>
-            <!-- <div class="project_2_description project_description">
-                <h3>Games Shop</h3>
-                <h4><span class="course_title">Curso EBAC:</span> Módulo 4: CSS</h4>
-                <h5><span class="course_title">Tecnologias utilizadas:</span> HTML e CSS</h5>
-                <p>Projeto fruto do curso EBAC onde pude colocar em prova as habilidades
-                    CSS aprendidas ao longo do curso
-                </p>
-                <a class="standard_button" id="project_button" href="#"><span class="letter_spacing">Visualizar</span></a>
-            </div> -->
-            
-            <p class="doIt">/* Passe o mouse por cima para ver a descrição do projeto */</p>
+            <p id="inicialText">/* Passe o mouse por cima para ver a descrição do projeto */</p>
         </div>
 
     </section>
