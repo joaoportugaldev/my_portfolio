@@ -1,3 +1,41 @@
+/*-------------------------- Fade In Animation ----------------------------*/
+@-webkit-keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@-moz-keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@-o-keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+.hoverEffect {
+    -webkit-animation: fadeIn .3s ease-in-out;
+    -moz-animation: fadeIn .3s ease-in-out;
+    -o-animation: fadeIn .3s ease-in-out;
+    animation: fadeIn .3s ease-in-out;
+}
+
+.project_description,
+#inicialText {
+    -webkit-animation: fadeIn .5s ease-in-out;
+    -moz-animation: fadeIn .5s ease-in-out;
+    -o-animation: fadeIn .5s ease-in-out;
+    animation: fadeIn .5s ease-in-out;
+}
+
+/*------------------------------------------------------------------------*/
+
 #projects {
     min-height: 80vh;
     display: flex;
@@ -44,10 +82,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 2em;
+    border: solid 3px var(--monocrom-b);
     width: 310px;
     height: 195px;
     background-color: var(--off-white);
-    transition: .8s;
+    transition: .3s;
     overflow: hidden;
     cursor: pointer;
 }
@@ -75,7 +114,6 @@
 }
 
 .arrow-prev svg:hover, .arrow-next svg:hover {
-    
     background-color: var(--off-white);
 } 
 
@@ -83,20 +121,73 @@
     fill: var(--monocrom-d)
 }
 
+/*------------------------ projects-preview --------------------------------*/
+
+.project_1 {
+    background-image: url(./projectIMG/my_portfolio.png);
+    background-size: cover;
+    background-position: 25%;
+}
+
+.project_2 {
+    background-image: url(./projectIMG/aluraplus_1.png);
+    background-size: cover;
+}
+
+.project_3 {
+    background-image: url(./projectIMG/gamesshop.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.project_4 {
+    background-image: url();
+    background-size: cover;
+}
+
+.project_5 {
+    background-image: url();
+    background-size: cover;
+}
+
+.project_6 {
+    background-image: url();
+    background-size: cover;
+}
+
+.project_7 {
+    background-image: url();
+    background-size: cover;
+}
+
+.project_8 {
+    background-image: url();
+    background-size: cover;
+}
+
 /* descrição dos projetos */
+
+.project_1_description,
+.project_2_description,
+.project_3_description,
+.project_4_description,
+.project_5_description,
+.project_6_description,
+.project_7_description,
+.project_8_description {
+    display: none;
+}
 
 .project_description {
     width: 100%;
-    display: none;
     flex-direction: column;
     align-items: center;
-    transition: .2s;
     padding: 0 2em;
 }
 
 .project_description p {
     text-align: center;
-    max-width: 90%;
+    max-width: 250px;
 }
 .project_description h3 {
     color: var(--monocrom-b);
@@ -132,6 +223,10 @@
     padding-top: .5em;
 }
 
+#inicialText {
+    text-align: center;
+}
+
 /* ------------------------------- faixa 'em breve' ---------------------------- */
 
 .band {
@@ -150,11 +245,8 @@
     font-weight: bold;
     letter-spacing: .2em;
 }
-/*-------------------------- botao visualizar no box ----------------------------*/
-@keyframes fadeIn {
-    from {opacity: 0%;}
-    to {opacity: 100%;}
-}
+
+/*-------------------------- botao github e deploy no box ----------------------------*/
 
 .boxContent {
     display: flex;
@@ -163,14 +255,13 @@
 
 .hoverEffect {
     background-color: transparent;
-    transition: .5s;
+    transition: 300ms;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(3px);
-    animation: fadeIn .2s ease-in-out;
 }
 
 .deployLink,
@@ -183,17 +274,10 @@
     font-size: 1.2em;
     border-radius: 1em;
     font-weight: bold;
+    
 }
 
 .deployLink:hover,
 .githubLink:hover {
     color: var(--azul-claro);
-}
-
-
-/*------------------------ projects-preview --------------------------------*/
-
-.project_1 {
-    background-image: url(./projectIMG/aluraplus_1.png);
-    background-size: cover;
 }
