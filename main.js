@@ -2,23 +2,27 @@ const selectBox = boxNumber => document.getElementsByClassName(boxNumber)[0];
 
 // aparecer botao de visualizar com o mouseover
 selectBox('project_1').addEventListener('mouseover', function() {
-    const boxText = selectBox('project_1').getElementsByClassName('boxText')[0];
+    const githubLink = selectBox('project_1').getElementsByClassName('githubLink')[0];
+    const deployLink = selectBox('project_1').getElementsByClassName('deployLink')[0];
     const boxContent = selectBox('project_1').getElementsByClassName('boxContent')[0];
     const inicialText = document.getElementById('inicialText');
     boxContent.classList.add('hoverEffect');
-    boxText.innerHTML = 'visualizar';
-    boxText.style.fontSize = '1.5em';
+    githubLink.style.display = 'block';
+    deployLink.style.display = 'block';
     inicialText.style.display = 'none';
 })
 
 // sumir botao de visualizar com o mouseout
 selectBox('project_1').addEventListener('mouseout', function() {
-    const boxText = selectBox('project_1').getElementsByClassName('boxText')[0];
+    const githubLink = selectBox('project_1').getElementsByClassName('githubLink')[0];
+    const deployLink = selectBox('project_1').getElementsByClassName('deployLink')[0];
     const boxContent = selectBox('project_1').getElementsByClassName('boxContent')[0];
     const inicialText = document.getElementById('inicialText');
     boxContent.classList.remove('hoverEffect');
-    boxText.innerHTML = ''
+    githubLink.style.display = 'none';
+    deployLink.style.display = 'none';
     inicialText.style.display = 'block';
+    
 })
 
 // aparecer descrição do projeto com mouseover

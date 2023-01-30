@@ -56,11 +56,6 @@
     transform: scale(1.1);
 }
 
-#projects a {
-    color: var(--branco);
-    text-decoration: none;
-}
-
 .arrow-prev, .arrow-next {
     display: flex;
     align-items: center;
@@ -137,12 +132,6 @@
     padding-top: .5em;
 }
 
-#project_button {
-    width: 100%;
-    background-color: var(--off-white);
-    padding: .4em;
-}
-
 /* ------------------------------- faixa 'em breve' ---------------------------- */
 
 .band {
@@ -167,6 +156,11 @@
     to {opacity: 100%;}
 }
 
+.boxContent {
+    display: flex;
+    gap: 1.6em;
+}
+
 .hoverEffect {
     background-color: transparent;
     transition: .5s;
@@ -182,7 +176,21 @@
 .deployLink,
 .githubLink {
     display: none;
+    text-decoration: none;
+    color: var(--azul-marinho);
+    padding: .5em;
+    background-color: var(--off-white);
+    font-size: 1.2em;
+    border-radius: 1em;
+    font-weight: bold;
 }
+
+.deployLink:hover,
+.githubLink:hover {
+    color: var(--azul-claro);
+}
+
+
 /*------------------------ projects-preview --------------------------------*/
 
 .project_1 {
