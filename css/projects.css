@@ -65,13 +65,17 @@
 }
 
 .carosel {
+    align-items: center;
     display: flex;
     gap: 2em;
 }
 
-.gridprojects {
+.carosel_itens--visible {
+    display: grid !important;
+}
+.carosel_itens {
     list-style: none;
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 2em;
@@ -95,7 +99,9 @@
     transform: scale(1.1);
 }
 
-.arrow-prev, .arrow-next {
+.arrow-next,
+.arrow-prev {
+    height: fit-content;
     display: flex;
     align-items: center;
 }
@@ -104,10 +110,25 @@
     fill: var(--off-white);
 }
 
-.arrow-prev svg, .arrow-next svg {
+
+.arrow-next,
+.arrow-prev {
+    background-color: transparent;
+    border: none;
+}
+
+.arrow-next svg{
+    opacity: 100;
+}
+
+.arrow-prev svg {
+    opacity: 0;
+}
+
+.arrow-prev svg,
+.arrow-next svg {
     width: 70px;
     height: 70px;
-    transition: .3s;
     border-radius: 5em;
     padding: .6em;
     cursor: pointer;
@@ -141,22 +162,25 @@
 }
 
 .project_4 {
-    background-image: url();
+    background-image: url(./projectIMG/alura_geek.png);
+    background-position: left;
     background-size: cover;
 }
 
 .project_5 {
-    background-image: url();
+    background-image: url(./projectIMG/jch_energia.png);
+    background-position: center;
     background-size: cover;
 }
 
 .project_6 {
-    background-image: url();
+    background-image: url(./projectIMG/order_summary_card.png);
     background-size: cover;
 }
 
 .project_7 {
-    background-image: url();
+    background-image: url(./projectIMG/newsletter.png);
+    background-position: center;
     background-size: cover;
 }
 
